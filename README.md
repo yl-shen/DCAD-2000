@@ -3,7 +3,7 @@ DCAD-2000 is a large-scale multilingual corpus built using
 newly extracted Common Crawl data (CC-MAIN-2024-46) and existing multilingual datasets. It includes over 2,282 languages, 46.72TB of data, and 8.63 billion documents, spanning 155 highand medium-resource languages and 159 writing scripts. We propose reframing data cleaning as an anomaly detection task. This dynamic filtering approach significantly enhances data quality by identifying and removing noisy or anomalous content.
 
 + Paper: [A Multilingual Dataset across 2000+ Languages with Data Cleaning as Anomaly Detection](https://www.arxiv.org/abs/2502.11546)
-+ Github: [https://github.com/wenlai-lavine/jola](https://wenlai-lavine.github.io/)
++ Github: [https://github.com/yl-shen/DCAD-2000](https://github.com/yl-shen/DCAD-2000)
 + Dataset (HuggingFace): [openbmb/DCAD-2000](https://huggingface.co/datasets/openbmb/DCAD-2000)
 
 ## Dataset Overview
@@ -29,7 +29,7 @@ Comparison of multilingual datasets constructed from Common Crawl (CC) and our c
     - **Feature Extraction:** For each document, we consider the following eight features: (1) Number of Words; (2) Character Repetition Ratio; (3) Word Repetition Ratio; (4) Special Characters Ratio; (5) Stop- words Ratio; (6) Flagged Words Ratio; (7) Language Identification (LID) Score; (8) Perplexity Score.
     - **Anomaly Detection:** We evaluate several classical anomaly detection algorithms including (1) Isolation Forest; (2) One Class SVM; (3) Local Outlier Factor and (4) K-Means.
     - Visualization<br>
-    ![OpenAI Logo](https://openai.com/favicon.ico)
+    ![ad_overview](https://raw.githubusercontent.com/yl-shen/DCAD-2000/main/images/logo.png)
 
 ## Data Statistics
 **传完github**再总结
