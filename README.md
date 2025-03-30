@@ -29,7 +29,7 @@ Comparison of multilingual datasets constructed from Common Crawl (CC) and our c
     - **Feature Extraction:** For each document, we consider the following eight features: (1) Number of Words; (2) Character Repetition Ratio; (3) Word Repetition Ratio; (4) Special Characters Ratio; (5) Stop- words Ratio; (6) Flagged Words Ratio; (7) Language Identification (LID) Score; (8) Perplexity Score.
     - **Anomaly Detection:** We evaluate several classical anomaly detection algorithms including (1) Isolation Forest; (2) One Class SVM; (3) Local Outlier Factor and (4) K-Means.
     - Visualization<br>
-    ![ad_overview](https://raw.githubusercontent.com/yl-shen/DCAD-2000/main/images/ad_visual.png)
+    ![ad_overview](https://github.com/yl-shen/DCAD-2000/raw/master/images/ad_visual.png)
 
 ## Data Statistics
 + [Geographical Distribution](https://github.com/yl-shen/DCAD-2000/blob/master/statistics/geo_group.tsv)
