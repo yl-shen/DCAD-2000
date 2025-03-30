@@ -32,7 +32,11 @@ Comparison of multilingual datasets constructed from Common Crawl (CC) and our c
     ![ad_overview](https://raw.githubusercontent.com/yl-shen/DCAD-2000/main/images/logo.png)
 
 ## Data Statistics
-**传完github**再总结
++ [Geographical Distribution](https://github.com/yl-shen/DCAD-2000/blob/master/statistics/geo_group.tsv)
++ [Script Distribution](https://github.com/yl-shen/DCAD-2000/blob/master/statistics/script_group_detail.tsv)
++ [Statistical Details](https://github.com/yl-shen/DCAD-2000/blob/master/statistics/statistic_detail.tsv)
++ [language list](https://github.com/yl-shen/DCAD-2000/blob/master/statistics/statistic_lang_num.tsv)
++ [language mapping](https://github.com/yl-shen/DCAD-2000/blob/master/lang_mapping/all_mapping.csv)
 
 ## Usage
 ```
@@ -63,5 +67,3 @@ This work is done by researchers at [Tsinghua NLP group](https://huggingface.co/
 ## Contact Information
 Yingli Shen (syl@mail.tsinghua.edu.cn)
 Wen Lai (wen.lai@tum.de)
-
-**加上logo**
