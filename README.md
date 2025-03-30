@@ -89,7 +89,7 @@ python dcad.py \
 
 ## Acknowledgements
 We introduce DCAD-2000, a large- scale multilingual dataset designed to address the increasing demand for high-quality and diverse training data for multilingual LLMs.
-This work is done by researchers at [Tsinghua NLP group](https://huggingface.co/thunlp) in collaboration with partners from [TUM](https://wenlai-lavine.github.io/) and [Modelbest Inc.](https://huggingface.co/openbmb) 
+This work is done by researchers at [Tsinghua NLP group](https://nlp.csai.tsinghua.edu.cn) in collaboration with partners from [TUM](https://wenlai-lavine.github.io/) and [Modelbest Inc.](https://huggingface.co/openbmb) 
 
 ## Contact Information
 Yingli Shen (syl@mail.tsinghua.edu.cn)
