@@ -6,8 +6,6 @@
 # https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
 
 import json
-## 61种语言
-# JSON_PATH = "/home/hadoop/jupyter_dir/zhangxueren/shenyingli/code/stop_words/bad_words_61.json"
 import os 
 current_file_path = os.path.abspath(__file__)
 current_file_dir = os.path.dirname(current_file_path)

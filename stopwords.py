@@ -7,16 +7,6 @@ import json
 import os
 import yaml
 
-## 128种语言
-# current_file_path = os.path.abspath(__file__)
-# current_file_dir = os.path.dirname(current_file_path)
-# current_file_dir = os.path.dirname(current_file_dir)
-
-# JSON_PATH = f"{current_file_dir}/stop_words/all_stop_words_128.json"
-
-# with open(JSON_PATH, 'r', encoding='utf-8') as json_f:
-#     stopwords = json.load(json_f)
-
 
 ### Stop Words from fineweb-2
 current_file_path = os.path.abspath(__file__)

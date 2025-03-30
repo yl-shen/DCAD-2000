@@ -1,7 +1,6 @@
 import os
 import pandas as pd
 
-### NLLB in CLUTURAX
 CULTURAX_To_NLLB = {
     'as': 'asm_Beng',
     'su': 'sun_Latn',
@@ -115,80 +114,3 @@ CULTURAX_To_NLLB = {
     'ms': 'zsm_Latn',
     'yue': 'yue_Hant',
 }
-
-## Maaping
-# BCP_TO_ISO = {}
-# ISO_TO_BCP = {}
-# ISO_TO_GLOT = {}
-
-# mapping_file = '/home/hadoop/zhangxueren/jupyter_zhangxueren/shenyingli/code/dc_pipeline/lang_mapping/google_lang_mapping.tsv'
-# mapping_pd = pd.read_csv(mapping_file, sep="\t")
-# ## headers: ['ISO 639 code', 'BCP-47 code', 'Number of speakers (rounded)', 'Writing system(s), ISO 15924', 'Name (Glottolog)', 'Glottocode (Glottolog)', 'Region, ISO 3166 (Glottolog)', 'Link to Glottolog', 'Alternative Name(s)', 'Endonym', 'Link to Wikipedia']
-
-# for idx, row in mapping_pd.iterrows():
-#     # BCP_TO_ISO[row['BCP-47 code']] = row['ISO 639 code']
-#     # ISO_TO_BCP[row["ISO 639 code"]] = row["BCP-47 code"]
-#     ISO_TO_GLOT[row["ISO 639 code"]] = [str(row["ISO 639 code"]) + '-' + script for script in row["Writing system(s), ISO 15924"].split(',')]
-
-# print(ISO_TO_GLOT)
-
-# import csv
-
-# BCP_TO_ISO = {}
-# bcp_iso_file = "/home/hadoop/zhangxueren/jupyter_zhangxueren/shenyingli/code/dc_pipeline/lang_mapping/bcp_to_iso.csv"
-# with open(bcp_iso_file, 'r', encoding='utf-8-sig') as iso_file:
-#     for line in iso_file:
-#         tmp_list = line.strip().split(";")
-#         BCP_TO_ISO[tmp_list[0]] = tmp_list[1]
-
-# mapping_file = '/home/hadoop/zhangxueren/jupyter_zhangxueren/shenyingli/code/dc_pipeline/lang_mapping/all_mapping.csv'
-# bcp_file = '/home/hadoop/zhangxueren/jupyter_zhangxueren/shenyingli/code/dc_pipeline/lang_mapping/BCP47.csv'
-# mapping_pd = pd.read_csv(mapping_file, sep=";")
-# bcp47_pd = pd.read_csv(bcp_file, sep=",")
-
-# total_list = []
-# for idx, row in bcp47_pd.iterrows():
-#     tmp_list = []
-#     tmp_list.append(row['lang'])
-#     tmp_list.append(row['name'])
-#     tmp_list.append(row['script'])
-#     ## 添加脚本表示
-#     #1. 先根据语言名字获取 ISO-3
-#     iso_639_3 = mapping_pd.loc[mapping_pd['English_Name'] == row['name'], '639-3']
-#     if iso_639_3.empty:
-#         tmp_list.append(f"{BCP_TO_ISO[row['lang']]}_{row['script']}")
-#     else:
-#         tmp_list.append(f"{iso_639_3.values[0]}_{row['script']}")
-#     total_list.append(tmp_list)
-
-# with open("/home/hadoop/zhangxueren/jupyter_zhangxueren/shenyingli/code/dc_pipeline/lang_mapping/madlad.csv", mode="w", newline="", encoding="utf-8") as mad_file:
-#     writer = csv.writer(mad_file)
-#     writer.writerows(total_list)
-
-
-# NLLB_LID_LABEL_LIST = []
-# import fasttext
-# lid_path = "/home/hadoop/zhangxueren/jupyter_zhangxueren/shenyingli/hf_model/fasttext-language-identification/nllb_200/model.bin"
-# LID_MODEL = fasttext.load_model(lid_path)
-# all_supported_list = LID_MODEL.labels
-# NLLB_LID_LABEL_LIST = [lang.replace('__label__', "") for lang in all_supported_list]
-# print(NLLB_LID_LABEL_LIST)
-
-# GLOTLID_LID_LABEL_LIST = []
-# import fasttext
-# lid_path = "/home/hadoop/zhangxueren/jupyter_zhangxueren/shenyingli/hf_model/fasttext-language-identification/glotlid/model_v3.bin"
-# LID_MODEL = fasttext.load_model(lid_path)
-# all_supported_list = LID_MODEL.labels
-# GLOTLID_LID_LABEL_LIST = [lang.replace('__label__', "") for lang in all_supported_list]
-# print(GLOTLID_LID_LABEL_LIST)
-
-SP_LM_LIST = []
-sp_path = "/data/shenyingli/hf_model/sp_lm"
-# sp_path = "/kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/sp_lm"
-file_list = os.listdir(sp_path)
-for file in file_list:
-    tmp_list = file.split(".")
-    if tmp_list[0] not in SP_LM_LIST:
-        SP_LM_LIST.append(tmp_list[0])
-
-# print(SP_LM_LIST)

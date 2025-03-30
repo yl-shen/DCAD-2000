@@ -19,68 +19,21 @@ from sklearn.svm import OneClassSVM
 from sklearn.neighbors import LocalOutlierFactor
 
 import fasttext
-# import sentencepiece
-# import kenlm
 
 """
-需要更改的参数：现在支持的/
---- process_type: all/one  --- all:指定语言下的所有文件，适合在集群里跑的时候指定。one:该语言下选择一个文本去处理，适合测试的时候使用
---- data_type: fineweb/fineweb_removed/mala/nllb/oscar/      
---- method_type: kmeans / oc_svm / iso_forest /lof
---- lang_list: iso-639-3加上下划线加上语言script版本，多个语言的话，需要空格分开
---- draw_fig: 如果需要生成图片就加上 --draw_fig， 如果在集群里就不要加
-
-传入文件名列表
-
-python clean_ml_by_file.py \
---process_type all \
---lang_list eng_Latn \
---file_list *** \
---num_proc 28 \
---data_type oscar \
---oscar_version 2024-30 \
---method_type iso_forest \
---cache_dir /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/.cache/oscar \
---data_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/datasets/mono/oscar-corpus \
---lid_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/fasttext-language-identification/glotlid/model_v3.bin \
---lm_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/trained_lm \
---sp_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/trained_sp \
---out_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/data_clean_out_colony
-
-### 下面是fineweb英文处理####
-
-python clean_ml_by_file.py \
---process_type all \
---lang_list eng_Latn \
---file_list 000_00000.parquet 000_00001.parquet 000_00002.parquet 000_00003.parquet 000_00004.parquet 000_00005.parquet 000_00006.parquet 000_00007.parquet 000_00008.parquet 000_00009.parquet 000_00010.parquet 000_00011.parquet 000_00012.parquet 000_00013.parquet 000_00014.parquet 000_00015.parquet 000_00016.parquet 000_00017.parquet 000_00018.parquet 000_00019.parquet 000_00020.parquet 000_00021.parquet 000_00022.parquet 000_00023.parquet 000_00024.parquet 000_00025.parquet 000_00026.parquet 000_00027.parquet 000_00028.parquet 000_00029.parquet 000_00030.parquet 000_00031.parquet 000_00032.parquet 000_00033.parquet 000_00034.parquet 000_00035.parquet 000_00036.parquet 000_00037.parquet 000_00038.parquet 000_00039.parquet 000_00040.parquet 000_00041.parquet 000_00042.parquet 000_00043.parquet 000_00044.parquet 000_00045.parquet 000_00046.parquet 000_00047.parquet 000_00048.parquet 000_00049.parquet 001_00000.parquet 001_00001.parquet 001_00002.parquet 001_00003.parquet 001_00004.parquet 001_00005.parquet 001_00006.parquet 001_00007.parquet 001_00008.parquet 001_00009.parquet 001_00010.parquet 001_00011.parquet 001_00012.parquet 001_00013.parquet 001_00014.parquet 001_00015.parquet 001_00016.parquet 001_00017.parquet 001_00018.parquet 001_00019.parquet 001_00020.parquet 001_00021.parquet 001_00022.parquet 001_00023.parquet 001_00024.parquet 001_00025.parquet 001_00026.parquet 001_00027.parquet 001_00028.parquet 001_00029.parquet 001_00030.parquet 001_00031.parquet 001_00032.parquet 001_00033.parquet 001_00034.parquet 001_00035.parquet 001_00036.parquet 001_00037.parquet 001_00038.parquet 001_00039.parquet 001_00040.parquet 001_00041.parquet 001_00042.parquet 001_00043.parquet 001_00044.parquet 001_00045.parquet 001_00046.parquet 001_00047.parquet 001_00048.parquet 001_00049.parquet 002_00000.parquet 002_00001.parquet 002_00002.parquet 002_00003.parquet 002_00004.parquet 002_00005.parquet 002_00006.parquet 002_00007.parquet 002_00008.parquet 002_00009.parquet 002_00010.parquet 002_00011.parquet 002_00012.parquet 002_00013.parquet 002_00014.parquet 002_00015.parquet 002_00016.parquet 002_00017.parquet 002_00018.parquet 002_00019.parquet 002_00020.parquet 002_00021.parquet 002_00022.parquet 002_00023.parquet 002_00024.parquet 002_00025.parquet 002_00026.parquet 002_00027.parquet 002_00028.parquet 002_00029.parquet 002_00030.parquet 002_00031.parquet 002_00032.parquet 002_00033.parquet 002_00034.parquet 002_00035.parquet 002_00036.parquet 002_00037.parquet 002_00038.parquet 002_00039.parquet 002_00040.parquet 002_00041.parquet 002_00042.parquet 002_00043.parquet 002_00044.parquet 002_00045.parquet 002_00046.parquet 002_00047.parquet 002_00048.parquet 002_00049.parquet 003_00000.parquet 003_00001.parquet 003_00002.parquet 003_00003.parquet 003_00004.parquet 003_00005.parquet 003_00006.parquet 003_00007.parquet 003_00008.parquet 003_00009.parquet 003_00010.parquet 003_00011.parquet 003_00012.parquet 003_00013.parquet 003_00014.parquet 003_00015.parquet 003_00016.parquet 003_00017.parquet 003_00018.parquet 003_00019.parquet 003_00020.parquet 003_00021.parquet 003_00022.parquet 003_00023.parquet 003_00024.parquet 003_00025.parquet 003_00026.parquet 003_00027.parquet 003_00028.parquet 003_00029.parquet 003_00030.parquet 003_00031.parquet 003_00032.parquet 003_00033.parquet 003_00034.parquet 003_00035.parquet 003_00036.parquet 003_00037.parquet 003_00038.parquet 003_00039.parquet 003_00040.parquet 003_00041.parquet 003_00042.parquet 003_00043.parquet 003_00044.parquet 003_00045.parquet 003_00046.parquet 003_00047.parquet 003_00048.parquet 003_00049.parquet 004_00000.parquet 004_00001.parquet 004_00002.parquet 004_00003.parquet 004_00004.parquet 004_00005.parquet 004_00006.parquet 004_00007.parquet 004_00008.parquet 004_00009.parquet 004_00010.parquet 004_00011.parquet 004_00012.parquet 004_00013.parquet 004_00014.parquet 004_00015.parquet 004_00016.parquet 004_00017.parquet 004_00018.parquet 004_00019.parquet 004_00020.parquet 004_00021.parquet 004_00022.parquet 004_00023.parquet 004_00024.parquet 004_00025.parquet 004_00026.parquet 004_00027.parquet 004_00028.parquet 004_00029.parquet 004_00030.parquet 004_00031.parquet 004_00032.parquet 004_00033.parquet 004_00034.parquet 004_00035.parquet 004_00036.parquet 004_00037.parquet 004_00038.parquet 004_00039.parquet 004_00040.parquet 004_00041.parquet 004_00042.parquet 004_00043.parquet 004_00044.parquet 004_00045.parquet 004_00046.parquet 004_00047.parquet 004_00048.parquet 004_00049.parquet \
---num_proc 28 \
---data_type fineweb_en \
---method_type iso_forest \
---cache_dir /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/.cache/fineweb-en \
---data_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/datasets/mono/CC-MAIN-2024-46-fineweb_en \
---lid_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/fasttext-language-identification/glotlid/model_v3.bin \
---lm_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/trained_lm \
---sp_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/trained_sp \
---out_path /kfs-crawl/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/data_clean_out_colony
-
-
-
-------------paper-------
-python clean_ml_by_file.py \
+python dcad.py \
 --draw_fig \
---process_type all \
---lang_list cmn_Hani \
---file_list 000_00011.parquet \
+--process_type one_specific \
+--one_specific_file ** \
+--lang_list eng_Latn \
 --num_proc 28 \
---data_type fineweb \
 --method_type iso_forest \
---cache_dir /mb-datacenter/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/.cache \
---data_path /mb-datacenter/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/datasets/mono/fineweb-2/data \
---lid_path /mb-datacenter/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/fasttext-language-identification/glotlid/model_v3.bin \
---lm_path /mb-datacenter/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/trained_lm \
---sp_path /mb-datacenter/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/hf_model/trained_sp \
---out_path /mb-datacenter/kfs-0437ff36-c86e-4fa8-949e-f64d1ca50d3e/shenyingli/acl_paper
-
+--cache_dir ** \
+--data_path ** \
+--lid_path **/glotlid/model_v3.bin \
+--lm_path ** \
+--sp_path ** \
+--out_path **
 
 """
 
@@ -90,7 +43,6 @@ current_file_dir = os.path.dirname(current_file_path)
 ## 设置参数
 parser = argparse.ArgumentParser(description="select the filter parameters dynamiclly.")
 parser.add_argument("--lang_list", type=str, nargs='+', help='language list to clean')
-parser.add_argument("--file_list", type=str, nargs='+', help='language list to clean')
 parser.add_argument("--character_repetition_length", type=int, default=10)
 parser.add_argument("--draw_fig", action="store_true", help="draw the statistic figure?")
 parser.add_argument("--num_proc", type=int, default=16)
@@ -103,11 +55,10 @@ parser.add_argument("--out_path", type=str, default="")
 parser.add_argument("--lid_path", type=str, default="")
 parser.add_argument("--sp_path", type=str, default="")
 parser.add_argument("--lm_path", type=str, default="")
-parser.add_argument("--oscar_version", type=str, default="2024-30")
+parser.add_argument("--one_specific_file", type=str, default="", help="指定一个文件，注意只传入文件名即可")
 
 args = parser.parse_args()
 
-# LID_PATH = os.path.join(current_file_dir, '..', '..', 'hf_model', 'fasttext-language-identification', 'glotlid', 'model_v3.bin')
 ## GLOT CONFIG PATH
 GLOT_CONFIG_PATH = os.path.join(current_file_dir, "post_scripts", "lang_dict", "glot_mapping.csv")
 
@@ -118,7 +69,6 @@ with open(GLOT_CONFIG_PATH, "r", encoding="utf-8") as f:
         GLOT_TO_ISO_1[tmp_list[0]] = tmp_list[2]
 
 ## load glot lid model
-# lid_model  = fasttext.load_model(LID_PATH)
 lid_model = fasttext.load_model(args.lid_path)
 
 def draw_figure(stats_columns, stats_data, clus, args, lang, file_name):
@@ -141,17 +91,9 @@ def draw_figure(stats_columns, stats_data, clus, args, lang, file_name):
 
     # Adjust layout and show plot
     plt.tight_layout(rect=[0, 0, 1, 0.95])
-    plt.suptitle("Anomaly Detecting Results: High vs Low Quality Data", fontsize=16)
-    if args.data_type == "oscar":
-        plt.savefig(f"{args.out_path}/{args.data_type}/{args.oscar_version}/{lang}/{args.data_type}_{args.method_type}_{lang}_{os.path.splitext(file_name)[0]}.png")
-    else:
-        plt.savefig(f"{args.out_path}/{args.data_type}/{lang}/{args.data_type}_{args.method_type}_{lang}_{os.path.splitext(file_name)[0]}.png")
-'''
-    if args.data_type == "oscar":
-        plt.savefig(f"{args.out_path}/{args.data_type}/{args.oscar_version}/{lang}/{args.data_type}_{args.method_type}_{lang}_{os.path.splitext(file_name)[0]}.pdf")
-    else:
-        plt.savefig(f"{args.out_path}/{args.data_type}/{lang}/{args.data_type}_{args.method_type}_{lang}_{os.path.splitext(file_name)[0]}.pdf")
-'''
+    plt.suptitle("Clustering/Detecting Results: High vs Low Quality Data", fontsize=16)
+    plt.savefig(f"{args.out_path}/{args.data_type}/{lang}/{args.data_type}_{args.method_type}_{lang}_{os.path.splitext(file_name)[0]}.pdf")
+
 
 ## 有效的后缀
 VALID_SUFFIX = ["json", "parquet", "arrow", "txt"]
@@ -160,10 +102,7 @@ def main(args):
     lang_list = args.lang_list
     for lang in lang_list:
         ## 确保目录存在
-        if args.data_type == "oscar":
-            os.makedirs(os.path.join(args.out_path, args.data_type, args.oscar_version, lang), exist_ok=True)
-        else:
-            os.makedirs(os.path.join(args.out_path, args.data_type, lang), exist_ok=True)
+        os.makedirs(os.path.join(args.out_path, args.data_type, lang), exist_ok=True)
 
         param = LoadParameters.load_parameters(lang)
         stopwords = LoadParameters.load_stopwords(lang)
@@ -223,29 +162,28 @@ def main(args):
             return example
 
         ## file_list
-        # if args.data_type in ["culturax", "madlad"]:
-        #     file_list = os.listdir(os.path.join(args.data_path, GLOT_TO_ISO_1[lang]))
-        # elif args.data_type == "fineweb":
-        #     file_list = os.listdir(os.path.join(args.data_path, lang, "train"))
-        # elif args.data_type == "fineweb_removed":
-        #     file_list = os.listdir(os.path.join(args.data_path, lang + "_removed", "train"))
-        # elif args.data_type == "mala":
-        #     all_file_list = os.listdir(os.path.join(args.data_path, lang))
-        #     file_list = [file_name for file_name in all_file_list if "arrow" in file_name]
-        # elif args.data_type == "nllb":
-        #     file_list = os.listdir(os.path.join(args.data_path, lang))
-        # elif args.data_type == "oscar":
-        #     file_list = os.listdir(os.path.join(args.data_path, "data", args.oscar_version, lang))
-        # else:
-        #     print("data type currently not supported, please ask ....")
-        #     break
-        file_list = args.file_list
+        if args.data_type in ["culturax", "madlad"]:
+            file_list = os.listdir(os.path.join(args.data_path, GLOT_TO_ISO_1[lang]))
+        elif args.data_type == "fineweb":
+            file_list = os.listdir(os.path.join(args.data_path, lang, "train"))
+        elif args.data_type == "fineweb_removed":
+            file_list = os.listdir(os.path.join(args.data_path, lang + "_removed", "train"))
+        elif args.data_type == "mala":
+            all_file_list = os.listdir(os.path.join(args.data_path, lang))
+            file_list = [file_name for file_name in all_file_list if "arrow" in file_name]
+        elif args.data_type == "nllb":
+            file_list = os.listdir(os.path.join(args.data_path, lang))
+        else:
+            print("data type currently not supported, please ask ....")
+            break
 
         ## process type
         if args.process_type == "one":
             selected_file_list = random.sample(file_list, 1)
         elif args.process_type == "all":
             selected_file_list = sorted(file_list)
+        elif args.process_type == "one_specific":
+            selected_file_list = [args.one_specific_file]
         else:
             print("process type not supported, please ask")
             break
@@ -253,12 +191,8 @@ def main(args):
         ## 遍历该语言下的所有文件
         for file_name in selected_file_list:
             file_name_prefix = os.path.splitext(file_name)[0]
-            ## 判断是否已经处理过，处理过了就直接跳过
-            if args.data_type == "oscar":
-                if os.path.exists(os.path.join(args.out_path, args.data_type, args.oscar_version, lang, f"{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_keep.jsonl")):
-                    continue
-            else:
-                if os.path.exists(os.path.join(args.out_path, args.data_type, lang, f"{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_keep.jsonl")):
+
+            if os.path.exists(os.path.join(args.out_path, args.data_type, lang, f"{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_keep.jsonl")):
                     continue
 
             if args.data_type in ["culturax", "madlad"]:
@@ -268,10 +202,6 @@ def main(args):
             elif args.data_type == "fineweb_removed":
                 selected_file_path = os.path.join(args.data_path, lang + "_removed", "train", file_name)
             elif args.data_type in ["mala", "nllb"]:
-                selected_file_path = os.path.join(args.data_path, lang, file_name)
-            elif args.data_type == "oscar":
-                selected_file_path = os.path.join(args.data_path, "data", args.oscar_version, lang, file_name)
-            elif args.data_type == "fineweb_en":
                 selected_file_path = os.path.join(args.data_path, lang, file_name)
             else:
                 selected_file_path = os.path.join(args.data_path, lang, file_name)
@@ -499,40 +429,16 @@ def main(args):
             })
             
             ## 写文件
-            if args.data_type == "oscar":
-                keep_ds.to_json(f"{args.out_path}/{args.data_type}/{args.oscar_version}/{lang}/{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_keep.jsonl", force_ascii=False)
-                remove_ds.to_json(f"{args.out_path}/{args.data_type}/{args.oscar_version}/{lang}/{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_remove.jsonl", force_ascii=False)
-                ## 统计文件
-                with open(f"{args.out_path}/{args.data_type}/{args.oscar_version}/{lang}/{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_stas.jsonl", "w") as f:
-                    json.dump(write_dict_list, f, indent=4)
-                print(f"数据写入完毕")
-            else:
-                keep_ds.to_json(f"{args.out_path}/{args.data_type}/{lang}/{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_keep.jsonl", force_ascii=False)
-                remove_ds.to_json(f"{args.out_path}/{args.data_type}/{lang}/{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_remove.jsonl", force_ascii=False)
-                ## 统计文件
-                with open(f"{args.out_path}/{args.data_type}/{lang}/{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_stas.jsonl", "w") as f:
-                    json.dump(write_dict_list, f, indent=4)
-                print(f"数据写入完毕")
+            keep_ds.to_json(f"{args.out_path}/{args.data_type}/{lang}/{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_keep.jsonl", force_ascii=False)
+            remove_ds.to_json(f"{args.out_path}/{args.data_type}/{lang}/{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_remove.jsonl", force_ascii=False)
+            ## 统计文件
+            with open(f"{args.out_path}/{args.data_type}/{lang}/{args.data_type}_{args.method_type}_{lang}_{file_name_prefix}_stas.jsonl", "w") as f:
+                json.dump(write_dict_list, f, indent=4)
+            print(f"数据写入完毕")
 
             ## 释放分布式锁
             unlock_source_file(selected_file_path)
 
 
 if __name__ == "__main__":
-    # parser = argparse.ArgumentParser(description="select the filter parameters dynamiclly.")
-    # parser.add_argument("--lang_list", type=str, nargs='+', help='language list to clean')
-    # parser.add_argument("--character_repetition_length", type=int, default=10)
-    # parser.add_argument("--draw_fig", action="store_true", help="draw the statistic figure?")
-    # parser.add_argument("--num_proc", type=int, default=16)
-    # parser.add_argument("--data_type", type=str, default="")
-    # parser.add_argument("--process_type", type=str, default="")
-    # parser.add_argument("--method_type", type=str, default="")
-    # parser.add_argument("--cache_dir", type=str, default="")
-    # parser.add_argument("--data_path", type=str, default="")
-    # parser.add_argument("--out_path", type=str, default="")
-    # parser.add_argument("--lid_path", type=str, default="")
-    # parser.add_argument("--sp_path", type=str, default="")
-    # parser.add_argument("--lm_path", type=str, default="")
-
-    # args = parser.parse_args()
     main(args)

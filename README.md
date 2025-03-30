@@ -38,7 +38,7 @@ Comparison of multilingual datasets constructed from Common Crawl (CC) and our c
 + [language list](https://github.com/yl-shen/DCAD-2000/blob/master/statistics/statistic_lang_num.tsv)
 + [language mapping](https://github.com/yl-shen/DCAD-2000/blob/master/lang_mapping/all_mapping.csv)
 
-## Usage
+## Usage (Dataset)
 ```
 from datasets import load_dataset
 data = load_dataset("openbmb/DCAD-2000")
@@ -49,6 +49,33 @@ from datasets import load_dataset
 data = load_dataset("openbmb/DCAD-2000", lang="eng_Latn")
 ```
 
+## Usage (Data Cleaning as Anomaly Detection)
++ Requirements:
+  - sklearn
+  - code base: https://github.com/bigscience-workshop/data-preparation
+```python
+# draw_fig: whether draw a statistical figure for the dataset
+# one_specific_file: dataset file (json/parquet)
+# lang_list: language id
+# num_proc: multiprocessing support
+# data_type: fineweb/mala/new_cc
+# method_type: iso_forest/kmeans/oc_svm/lof
+
+python dcad.py \
+--draw_fig \
+--process_type one_specific \
+--one_specific_file ** \
+--lang_list eng_Latn \
+--num_proc 28 \
+--data_type fineweb \
+--method_type iso_forest \
+--cache_dir ** \
+--data_path ** \
+--lid_path **/glotlid/model_v3.bin \
+--lm_path ** \
+--sp_path ** \
+--out_path **
+```
 
 ## Citation Information
 ```

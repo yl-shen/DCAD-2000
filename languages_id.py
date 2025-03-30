@@ -354,33 +354,6 @@ CULTURAX_LANG_LIST = ['af', 'sq', 'am', 'ar', 'an', 'hy', 'as', 'ast', 'av', 'az
 MADLAD_LANG_LIST = ['en', 'ru', 'es', 'fr', 'de', 'it', 'pt', 'pl', 'nl', 'vi', 'tr', 'sv', 'id', 'ro', 'cs', 'zh', 'hu', 'ja', 'th', 'fi', 'fa', 'uk', 'da', 'el', 'no', 'bg', 'sk', 'ko', 'ar', 'lt', 'ca', 'sl', 'he', 'et', 'lv', 'hi', 'sq', 'ms', 'az', 'sr', 'ta', 'hr', 'kk', 'is', 'ml', 'mr', 'te', 'af', 'gl', 'fil', 'be', 'mk', 'eu', 'bn', 'ka', 'mn', 'bs', 'uz', 'ur', 'sw', 'yue', 'ne', 'kn', 'kaa', 'gu', 'si', 'cy', 'eo', 'la', 'hy', 'ky', 'tg', 'ga', 'mt', 'my', 'km', 'tt', 'so', 'ku', 'ps', 'pa', 'rw', 'lo', 'ha', 'dv', 'fy', 'lb', 'ckb', 'mg', 'gd', 'am', 'ug', 'ht', 'grc', 'hmn', 'sd', 'jv', 'mi', 'tk', 'ceb', 'yi', 'ba', 'fo', 'or', 'xh', 'su', 'kl', 'ny', 'sm', 'sn', 'co', 'zu', 'ig', 'yo', 'pap', 'st', 'haw', 'as', 'oc', 'cv', 'lus', 'tet', 'gsw', 'sah', 'br', 'rm', 'sa', 'bo', 'om', 'se', 'ce', 'cnh', 'ilo', 'hil', 'udm', 'os', 'lg', 'ti', 'vec', 'ts', 'tyv', 'kbd', 'ee', 'iba', 'av', 'kha', 'to', 'tn', 'nso', 'fj', 'zza', 'ak', 'ada', 'otq', 'dz', 'bua', 'cfm', 'ln', 'chm', 'gn', 'krc', 'wa', 'hif', 'yua', 'srn', 'war', 'rom', 'bik', 'pam', 'sg', 'lu', 'ady', 'kbp', 'syr', 'ltg', 'myv', 'iso', 'kac', 'bho', 'ay', 'kum', 'qu', 'za', 'pag', 'ngu', 've', 'pck', 'zap', 'tyz', 'hui', 'bbc', 'tzo', 'tiv', 'ksd', 'gom', 'min', 'ang', 'nhe', 'bgp', 'nzi', 'nnb', 'nv', 'zxx', 'bci', 'kv', 'new', 'mps', 'alt', 'meu', 'bew', 'fon', 'iu', 'abt', 'mgh', 'mnw', 'tvl', 'dov', 'tlh', 'ho', 'kw', 'mrj', 'meo', 'crh', 'mbt', 'emp', 'ace', 'ium', 'mam', 'gym', 'mai', 'crs', 'pon', 'ubu', 'fip', 'quc', 'gv', 'kj', 'btx', 'ape', 'chk', 'rcf', 'shn', 'tzh', 'mdf', 'ppk', 'ss', 'gag', 'cab', 'kri', 'seh', 'ibb', 'tbz', 'bru', 'enq', 'ach', 'cuk', 'kmb', 'wo', 'kek', 'qub', 'tab', 'bts', 'kos', 'rwo', 'cak', 'tuc', 'bum', 'cjk', 'gil', 'stq', 'tsg', 'quh', 'mak', 'arn', 'ban', 'jiv', 'sja', 'yap', 'tcy', 'toj', 'twu', 'xal', 'amu', 'rmc', 'hus', 'nia', 'kjh', 'bm', 'guh', 'mas', 'acf', 'dtp', 'ksw', 'bzj', 'din', 'zne', 'mad', 'msi', 'mag', 'mkn', 'kg', 'lhu', 'ch', 'qvi', 'mh', 'djk', 'sus', 'mfe', 'srm', 'dyu', 'ctu', 'gui', 'pau', 'inb', 'bi', 'mni', 'guc', 'jam', 'wal', 'jac', 'bas', 'gor', 'skr', 'nyu', 'noa', 'sda', 'gub', 'nog', 'cni', 'teo', 'tdx', 'sxn', 'rki', 'nr', 'frp', 'alz', 'taj', 'lrc', 'cce', 'rn', 'jvn', 'hvn', 'nij', 'dwr', 'izz', 'msm', 'bus', 'ktu', 'chr', 'maz', 'tzj', 'suz', 'knj', 'bim', 'gvl', 'bqc', 'tca', 'pis', 'prk', 'laj', 'mel', 'qxr', 'niq', 'ahk', 'shp', 'hne', 'spp', 'koi', 'krj', 'quf', 'luz', 'agr', 'tsc', 'mqy', 'gof', 'gbm', 'miq', 'dje', 'awa', 'bjj', 'qvz', 'sjp', 'tll', 'raj', 'kjg', 'bgz', 'quy', 'cbk', 'akb', 'oj', 'ify', 'mey', 'ks', 'cac', 'brx', 'qup', 'syl', 'jax', 'ff', 'ber', 'tks', 'trp', 'mrw', 'adh', 'smt', 'srr', 'ffm', 'qvc', 'mtr', 'ann', 'kaa-Latn', 'aa', 'noe', 'nut', 'gyn', 'kwi', 'xmm', 'msb', 'el-Latn', 'doi', 'mtq', 'dln', 'cyo', 'abs', 'hi-Latn', 'shu', 'yaq', 'nyo', 'cgg', 'sxu', 'mdh', 'rwr', 'xnr', 'mui', 'skg', 'ymm', 'ctd-Latn', 'ayl', 'kjb', 'rhg-Latn', 'bmm', 'azg', 'kfy', 'bto', 'ja-Latn', 'mfb', 'ru-Latn', 'tuf', 'ctg', 'pmy', 'xog', 'te-Latn', 'ber-Latn', 'mdy', 'az-RU', 'ta-Latn', 'clu', 'tly-IR', 'ng', 'bzc', 'nan-Latn-TW', 'ml-Latn', 'max', 'ar-Latn', 'gom-Latn', 'bg-Latn', 'nd', 'zyj', 'rkt', 'kn-Latn', 'zh-Latn', 'el-CY', 'dcc', 'bgc', 'mwr', 'vkt', 'cr-Latn', 'apd-SD', 'trw', 'bn-Latn', 'gu-Latn', 'gju', 'sat-Latn', 'ndc-ZW', 'kmz-Latn', 'mr-Latn', 'en-Cyrl', 'en-Arab', 'ms-Arab', 'ms-Arab-BN', 'bhb-Gujr', 'pa-Arab', 'syl-Latn', 'ff-Adlm', 'pcm', 'tpi', 'gjk', 'bfy', 'sgj', 'nyn']
 
 
-#### 更新到所有语言上去 --- cultuax and Madlad
-# current_file_path = os.path.abspath(__file__)
-# current_file_dir = os.path.dirname(current_file_path)
-# # current_file_dir = os.path.dirname(current_file_dir)
-
-# ### lang mapping
-# LANG_MAPPING = {}
-# langs_id = []
-# lang_mapping_file = f'{current_file_dir}/lang_mapping/madlad.csv'
-# lang_mapping_pd = pd.read_csv(lang_mapping_file, sep=",", header=None)
-# for idx, row in lang_mapping_pd.iterrows():
-#     LANG_MAPPING[row[0]] = [row[1], row[2], row[3]]
-#     langs_id.append(
-#             {
-#                 "lang": row[1],
-#                 "dataset_id": row[0],
-#                 "stopwords_id": row[0],
-#                 "flagged_words_id": row[3],
-#                 "fasttext_id": row[3],
-#                 "sentencepiece_id": row[0],
-#                 "kenlm_id": row[0],
-#             }
-#         )
-
-# langs_id = pd.DataFrame(langs_id)
-
-
 current_file_path = os.path.abspath(__file__)
 current_file_dir = os.path.dirname(current_file_path)
 # current_file_dir = os.path.dirname(current_file_dir)
