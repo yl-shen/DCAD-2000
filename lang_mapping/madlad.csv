@@ -1,0 +1,538 @@
+en,English,Latn,eng_Latn
+ru,Russian,Cyrl,rus_Cyrl
+es,Spanish,Latn,spa_Latn
+fr,French,Latn,fra_Latn
+de,German,Latn,deu_Latn
+it,Italian,Latn,ita_Latn
+pt,Portuguese,Latn,por_Latn
+pl,Polish,Latn,pol_Latn
+nl,Dutch,Latn,nld_Latn
+vi,Vietnamese,Latn,vie_Latn
+tr,Turkish,Latn,tur_Latn
+sv,Swedish,Latn,swe_Latn
+id,Indonesian,Latn,ind_Latn
+ro,Romanian,Latn,ron_Latn
+cs,Czech,Latn,ces_Latn
+zh,Mandarin Chinese,Hans,zho_Hans
+hu,Hungarian,Latn,hun_Latn
+ja,Japanese,Jpan,jpn_Jpan
+th,Thai,Thai,tha_Thai
+fi,Finnish,Latn,fin_Latn
+fa,Persian,Arab,fas_Arab
+uk,Ukrainian,Cyrl,ukr_Cyrl
+da,Danish,Latn,dan_Latn
+el,Greek,Grek,ell_Grek
+no,Norwegian,Latn,nor_Latn
+bg,Bulgarian,Cyrl,bul_Cyrl
+sk,Slovak,Latn,slk_Latn
+ko,Korean,Kore,kor_Kore
+ar,Arabic,Arab,ara_Arab
+lt,Lithuanian,Latn,lit_Latn
+ca,Catalan,Latn,cat_Latn
+sl,Slovenian,Latn,slv_Latn
+he,Hebrew,Hebr,heb_Hebr
+et,Estonian,Latn,est_Latn
+lv,Latvian,Latn,lav_Latn
+hi,Hindi,Deva,hin_Deva
+sq,Albanian,Latn,sqi_Latn
+ms,Malay,Latn,msa_Latn
+az,Azerbaijani,Latn,aze_Latn
+sr,Serbian,Cyrl,srp_Cyrl
+ta,Tamil,Taml,tam_Taml
+hr,Croatian,Latn,hrv_Latn
+kk,Kazakh,Cyrl,kaz_Cyrl
+is,Icelandic,Latn,isl_Latn
+ml,Malayalam,Mlym,mal_Mlym
+mr,Marathi,Deva,mar_Deva
+te,Telugu,Telu,tel_Telu
+af,Afrikaans,Latn,afr_Latn
+gl,Galician,Latn,glg_Latn
+fil,Filipino,Latn,fil_Latn
+be,Belarusian,Cyrl,bel_Cyrl
+mk,Macedonian,Cyrl,mkd_Cyrl
+eu,Basque,Latn,eus_Latn
+bn,Bengali,Beng,ben_Beng
+ka,Georgian,Geor,kat_Geor
+mn,Mongolian,Cyrl,mon_Cyrl
+bs,Bosnian,Cyrl,bos_Cyrl
+uz,Uzbek,Latn,uzb_Latn
+ur,Urdu,Arab,urd_Arab
+sw,Swahili,Latn,swa_Latn
+yue,Cantonese,Hant,yue_Hant
+ne,Nepali,Deva,nep_Deva
+kn,Kannada,Knda,kan_Knda
+kaa,Kara-Kalpak,Cyrl,kaa_Cyrl
+gu,Gujarati,Gujr,guj_Gujr
+si,Sinhala,Sinh,sin_Sinh
+cy,Welsh,Latn,cym_Latn
+eo,Esperanto,Latn,epo_Latn
+la,Latin,Latn,lat_Latn
+hy,Armenian,Armn,hye_Armn
+ky,Kyrghyz,Cyrl,kir_Cyrl
+tg,Tajik,Cyrl,tgk_Cyrl
+ga,Irish,Latn,gle_Latn
+mt,Maltese,Latn,mlt_Latn
+my,Myanmar (Burmese),Mymr,mya_Mymr
+km,Khmer,Khmr,khm_Khmr
+tt,Tatar,Cyrl,tat_Cyrl
+so,Somali,Latn,som_Latn
+ku,Kurdish (Kurmanji),Latn,kur_Latn
+ps,Pashto,Arab,pus_Arab
+pa,Punjabi,Guru,pan_Guru
+rw,Kinyarwanda,Latn,kin_Latn
+lo,Lao,Laoo,lao_Laoo
+ha,Hausa,Latn,hau_Latn
+dv,Dhivehi,Thaa,div_Thaa
+fy,W. Frisian,Latn,fry_Latn
+lb,Luxembourgish,Latn,ltz_Latn
+ckb,Kurdish (Sorani),Arab,ckb_Arab
+mg,Malagasy,Latn,mlg_Latn
+gd,Scottish Gaelic,Latn,gla_Latn
+am,Amharic,Ethi,amh_Ethi
+ug,Uyghur,Arab,uig_Arab
+ht,Haitian Creole,Latn,hat_Latn
+grc,Ancient Greek,Grek,grc_Grek
+hmn,Hmong,Latn,hmn_Latn
+sd,Sindhi,Arab,snd_Arab
+jv,Javanese,Latn,jav_Latn
+mi,Maori,Latn,mri_Latn
+tk,Turkmen,Latn,tuk_Latn
+ceb,Cebuano,Latn,ceb_Latn
+yi,Yiddish,Hebr,yid_Hebr
+ba,Bashkir,Cyrl,bak_Cyrl
+fo,Faroese,Latn,fao_Latn
+or,Odia (Oriya),Orya,ori_Orya
+xh,Xhosa,Latn,xho_Latn
+su,Sundanese,Latn,sun_Latn
+kl,Kalaallisut,Latn,kal_Latn
+ny,Chichewa,Latn,nya_Latn
+sm,Samoan,Latn,smo_Latn
+sn,Shona,Latn,sna_Latn
+co,Corsican,Latn,cos_Latn
+zu,Zulu,Latn,zul_Latn
+ig,Igbo,Latn,ibo_Latn
+yo,Yoruba,Latn,yor_Latn
+pap,Papiamento,Latn,pap_Latn
+st,Sesotho,Latn,sot_Latn
+haw,Hawaiian,Latn,haw_Latn
+as,Assamese,Beng,asm_Beng
+oc,Occitan,Latn,oci_Latn
+cv,Chuvash,Cyrl,chv_Cyrl
+lus,Mizo,Latn,lus_Latn
+tet,Tetum,Latn,tet_Latn
+gsw,Swiss German,Latn,gsw_Latn
+sah,Yakut,Cyrl,sah_Cyrl
+br,Breton,Latn,bre_Latn
+rm,Romansh,Latn,roh_Latn
+sa,Sanskrit,Deva,san_Deva
+bo,Tibetan,Tibt,bod_Tibt
+om,Oromo,Latn,orm_Latn
+se,N. Sami,Latn,sme_Latn
+ce,Chechen,Cyrl,che_Cyrl
+cnh,Hakha Chin,Latn,cnh_Latn
+ilo,Ilocano,Latn,ilo_Latn
+hil,Hiligaynon,Latn,hil_Latn
+udm,Udmurt,Cyrl,udm_Cyrl
+os,Ossetian,Cyrl,oss_Cyrl
+lg,Luganda,Latn,lug_Latn
+ti,Tigrinya,Ethi,tir_Ethi
+vec,Venetian,Latn,vec_Latn
+ts,Tsonga,Latn,tso_Latn
+tyv,Tuvinian,Cyrl,tyv_Cyrl
+kbd,Kabardian,Cyrl,kbd_Cyrl
+ee,Ewe,Latn,ewe_Latn
+iba,Iban,Latn,iba_Latn
+av,Avar,Cyrl,ava_Cyrl
+kha,Khasi,Latn,kha_Latn
+to,Tonga (Tonga Islands),Latn,ton_Latn
+tn,Tswana,Latn,tsn_Latn
+nso,Sepedi,Latn,nso_Latn
+fj,Fijian,Latn,fij_Latn
+zza,Zaza,Latn,zza_Latn
+ak,Twi,Latn,twi_Latn
+ada,Adangme,Latn,ada_Latn
+otq,Querétaro Otomi,Latn,otq_Latn
+dz,Dzongkha,Tibt,dzo_Tibt
+bua,Buryat,Cyrl,bua_Cyrl
+cfm,Falam Chin,Latn,cfm_Latn
+ln,Lingala,Latn,lin_Latn
+chm,Meadow Mari,Cyrl,chm_Cyrl
+gn,Guarani,Latn,grn_Latn
+krc,Karachay-Balkar,Cyrl,krc_Cyrl
+wa,Walloon,Latn,wln_Latn
+hif,Fiji Hindi,Latn,hif_Latn
+yua,Yucateco,Latn,yua_Latn
+srn,Sranan Tongo,Latn,srn_Latn
+war,Waray (Philippines),Latn,war_Latn
+rom,Romani,Latn,rom_Latn
+bik,Central Bikol,Latn,bcl_Latn
+pam,Pampanga,Latn,pam_Latn
+sg,Sango,Latn,sag_Latn
+lu,Luba-Katanga,Latn,lub_Latn
+ady,Adyghe,Cyrl,ady_Cyrl
+kbp,Kabiyè,Latn,kbp_Latn
+syr,Syriac,Syrc,syr_Syrc
+ltg,Latgalian,Latn,ltg_Latn
+myv,Erzya,Cyrl,myv_Cyrl
+iso,Isoko,Latn,iso_Latn
+kac,Kachin,Latn,kac_Latn
+bho,Bhojpuri,Deva,bho_Deva
+ay,Aymara,Latn,aym_Latn
+kum,Kumyk,Cyrl,kum_Cyrl
+qu,Quechua,Latn,que_Latn
+za,Zhuang,Latn,zha_Latn
+pag,Pangasinan,Latn,pag_Latn
+ngu,Guerrero Nahuatl,Latn,ngu_Latn
+ve,Venda,Latn,ven_Latn
+pck,Paite Chin,Latn,pck_Latn
+zap,Zapotec,Latn,zap_Latn
+tyz,Tày,Latn,tyz_Latn
+hui,Huli,Latn,hui_Latn
+bbc,Batak Toba,Latn,bbc_Latn
+tzo,Tzotzil,Latn,tzo_Latn
+tiv,Tiv,Latn,tiv_Latn
+ksd,Kuanua,Latn,ksd_Latn
+gom,Goan Konkani,Deva,gom_Deva
+min,Minangkabau,Latn,min_Latn
+ang,Old English,Latn,ang_Latn
+nhe,E. Huasteca Nahuatl,Latn,nhe_Latn
+bgp,E. Baluchi,Latn,bgp_Latn
+nzi,Nzima,Latn,nzi_Latn
+nnb,Nande,Latn,nnb_Latn
+nv,Navajo,Latn,nav_Latn
+zxx,Noise,-,zxx_-
+bci,Baoulé,Latn,bci_Latn
+kv,Komi,Cyrl,kom_Cyrl
+new,Newari,Deva,new_Deva
+mps,Dadibi,Latn,mps_Latn
+alt,S. Altai,Cyrl,alt_Cyrl
+meu,Motu,Latn,meu_Latn
+bew,Betawi,Latn,bew_Latn
+fon,Fon,Latn,fon_Latn
+iu,Inuktitut,Cans,iku_Cans
+abt,Ambulas,Latn,abt_Latn
+mgh,Makhuwa-Meetto,Latn,mgh_Latn
+mnw,Mon,Mymr,mnw_Mymr
+tvl,Tuvalu,Latn,tvl_Latn
+dov,Dombe,Latn,dov_Latn
+tlh,Klingon,Latn,tlh_Latn
+ho,Hiri Motu,Latn,hmo_Latn
+kw,Cornish,Latn,cor_Latn
+mrj,Hill Mari,Cyrl,mrj_Cyrl
+meo,Kedah Malay,Latn,meo_Latn
+crh,Crimean Tatar,Cyrl,crh_Cyrl
+mbt,Matigsalug Manobo,Latn,mbt_Latn
+emp,N. Emberá,Latn,emp_Latn
+ace,Achinese,Latn,ace_Latn
+ium,Iu Mien,Latn,ium_Latn
+mam,Mam,Latn,mam_Latn
+gym,Ngäbere,Latn,gym_Latn
+mai,Maithili,Deva,mai_Deva
+crs,Seselwa Creole French,Latn,crs_Latn
+pon,Pohnpeian,Latn,pon_Latn
+ubu,Umbu-Ungu,Latn,ubu_Latn
+fip,Fipa,Latn,fip_Latn
+quc,K'iche',Latn,quc_Latn
+gv,Manx,Latn,glv_Latn
+kj,Kuanyama,Latn,kua_Latn
+btx,Batak Karo,Latn,btx_Latn
+ape,Bukiyip,Latn,ape_Latn
+chk,Chuukese,Latn,chk_Latn
+rcf,Réunion Creole French,Latn,rcf_Latn
+shn,Shan,Mymr,shn_Mymr
+tzh,Tzeltal,Latn,tzh_Latn
+mdf,Moksha,Cyrl,mdf_Cyrl
+ppk,Uma,Latn,ppk_Latn
+ss,Swati,Latn,ssw_Latn
+gag,Gagauz,Latn,gag_Latn
+cab,Garifuna,Latn,cab_Latn
+kri,Krio,Latn,kri_Latn
+seh,Sena,Latn,seh_Latn
+ibb,Ibibio,Latn,ibb_Latn
+tbz,Ditammari,Latn,tbz_Latn
+bru,E. Bru,Latn,bru_Latn
+enq,Enga,Latn,enq_Latn
+ach,Acoli,Latn,ach_Latn
+cuk,San Blas Kuna,Latn,cuk_Latn
+kmb,Kimbundu,Latn,kmb_Latn
+wo,Wolof,Latn,wol_Latn
+kek,Kekchí,Latn,kek_Latn
+qub,Huallaga Huánuco Quechua,Latn,qub_Latn
+tab,Tabassaran,Cyrl,tab_Cyrl
+bts,Batak Simalungun,Latn,bts_Latn
+kos,Kosraean,Latn,kos_Latn
+rwo,Rawa,Latn,rwo_Latn
+cak,Kaqchikel,Latn,cak_Latn
+tuc,Mutu,Latn,tuc_Latn
+bum,Bulu,Latn,bum_Latn
+cjk,Chokwe,Latn,cjk_Latn
+gil,Gilbertese,Latn,gil_Latn
+stq,Saterfriesisch,Latn,stq_Latn
+tsg,Tausug,Latn,tsg_Latn
+quh,S. Bolivian Quechua,Latn,quh_Latn
+mak,Makasar,Latn,mak_Latn
+arn,Mapudungun,Latn,arn_Latn
+ban,Balinese,Latn,ban_Latn
+jiv,Shuar,Latn,jiv_Latn
+sja,Epena,Latn,sja_Latn
+yap,Yapese,Latn,yap_Latn
+tcy,Tulu,Knda,tcy_Knda
+toj,Tojolabal,Latn,toj_Latn
+twu,Termanu,Latn,twu_Latn
+xal,Kalmyk,Cyrl,xal_Cyrl
+amu,Guerrero Amuzgo,Latn,amu_Latn
+rmc,Carpathian Romani,Latn,rmc_Latn
+hus,Huastec,Latn,hus_Latn
+nia,Nias,Latn,nia_Latn
+kjh,Khakas,Cyrl,kjh_Cyrl
+bm,Bambara,Latn,bam_Latn
+guh,Guahibo,Latn,guh_Latn
+mas,Masai,Latn,mas_Latn
+acf,St Lucian Creole French,Latn,acf_Latn
+dtp,Kadazan Dusun,Latn,dtp_Latn
+ksw,S'gaw Karen,Mymr,ksw_Mymr
+bzj,Belize Kriol English,Latn,bzj_Latn
+din,Dinka,Latn,din_Latn
+zne,Zande,Latn,zne_Latn
+mad,Madurese,Latn,mad_Latn
+msi,Sabah Malay,Latn,msi_Latn
+mag,Magahi,Deva,mag_Deva
+mkn,Kupang Malay,Latn,mkn_Latn
+kg,Kongo,Latn,kon_Latn
+lhu,Lahu,Latn,lhu_Latn
+ch,Chamorro,Latn,cha_Latn
+qvi,Imbabura H. Quichua,Latn,qvi_Latn
+mh,Marshallese,Latn,mah_Latn
+djk,E. Maroon Creole,Latn,djk_Latn
+sus,Susu,Latn,sus_Latn
+mfe,Morisien,Latn,mfe_Latn
+srm,Saramaccan,Latn,srm_Latn
+dyu,Dyula,Latn,dyu_Latn
+ctu,Chol,Latn,ctu_Latn
+gui,E. Bolivian Guaraní,Latn,gui_Latn
+pau,Palauan,Latn,pau_Latn
+inb,Inga,Latn,inb_Latn
+bi,Bislama,Latn,bis_Latn
+mni,Meiteilon (Manipuri),Beng,mni_Beng
+guc,Wayuu,Latn,guc_Latn
+jam,Jamaican Creole English,Latn,jam_Latn
+wal,Wolaytta,Latn,wal_Latn
+jac,Popti',Latn,jac_Latn
+bas,Basa (Cameroon),Latn,bas_Latn
+gor,Gorontalo,Latn,gor_Latn
+skr,Saraiki,Arab,skr_Arab
+nyu,Nyungwe,Latn,nyu_Latn
+noa,Woun Meu,Latn,noa_Latn
+sda,Toraja-Sa'dan,Latn,sda_Latn
+gub,Guajajára,Latn,gub_Latn
+nog,Nogai,Cyrl,nog_Cyrl
+cni,Asháninka,Latn,cni_Latn
+teo,Teso,Latn,teo_Latn
+tdx,Tandroy-Mahafaly Malagasy,Latn,tdx_Latn
+sxn,Sangir,Latn,sxn_Latn
+rki,Rakhine,Mymr,rki_Mymr
+nr,South Ndebele,Latn,nbl_Latn
+frp,Arpitan,Latn,frp_Latn
+alz,Alur,Latn,alz_Latn
+taj,E. Tamang,Deva,taj_Deva
+lrc,N. Luri,Arab,lrc_Arab
+cce,Chopi,Latn,cce_Latn
+rn,Rundi,Latn,run_Latn
+jvn,Caribbean Javanese,Latn,jvn_Latn
+hvn,Sabu,Latn,hvn_Latn
+nij,Ngaju,Latn,nij_Latn
+dwr,Dawro,Latn,dwr_Latn
+izz,Izii,Latn,izz_Latn
+msm,Agusan Manobo,Latn,msm_Latn
+bus,Bokobaru,Latn,bus_Latn
+ktu,Kituba (DRC),Latn,ktu_Latn
+chr,Cherokee,Cher,chr_Cher
+maz,Central Mazahua,Latn,maz_Latn
+tzj,Tz'utujil,Latn,tzj_Latn
+suz,Sunwar,Deva,suz_Deva
+knj,W. Kanjobal,Latn,knj_Latn
+bim,Bimoba,Latn,bim_Latn
+gvl,Gulay,Latn,gvl_Latn
+bqc,Boko (Benin),Latn,bqc_Latn
+tca,Ticuna,Latn,tca_Latn
+pis,Pijin,Latn,pis_Latn
+prk,Parauk,Latn,prk_Latn
+laj,Lango (Uganda),Latn,laj_Latn
+mel,Central Melanau,Latn,mel_Latn
+qxr,Cañar H. Quichua,Latn,qxr_Latn
+niq,Nandi,Latn,niq_Latn
+ahk,Akha,Latn,ahk_Latn
+shp,Shipibo-Conibo,Latn,shp_Latn
+hne,Chhattisgarhi,Deva,hne_Deva
+spp,Supyire Senoufo,Latn,spp_Latn
+koi,Komi-Permyak,Cyrl,koi_Cyrl
+krj,Kinaray-A,Latn,krj_Latn
+quf,Lambayeque Quechua,Latn,quf_Latn
+luz,S. Luri,Arab,luz_Arab
+agr,Aguaruna,Latn,agr_Latn
+tsc,Tswa,Latn,tsc_Latn
+mqy,Manggarai,Latn,mqy_Latn
+gof,Gofa,Ethi,gof_Ethi
+gbm,Garhwali,Deva,gbm_Deva
+miq,Mískito,Latn,miq_Latn
+dje,Zarma,Latn,dje_Latn
+awa,Awadhi,Deva,awa_Deva
+bjj,Kanauji,Deva,bjj_Deva
+qvz,N. Pastaza Quichua,Latn,qvz_Latn
+sjp,Surjapuri,Deva,sjp_Deva
+tll,Tetela,Latn,tll_Latn
+raj,Rajasthani,Deva,raj_Deva
+kjg,Khmu,Laoo,kjg_Laoo
+bgz,Banggai,Latn,bgz_Latn
+quy,Ayacucho Quechua,Latn,quy_Latn
+cbk,Chavacano,Latn,cbk_Latn
+akb,Batak Angkola,Latn,akb_Latn
+oj,Ojibwa,Cans,oji_Cans
+ify,Keley-I Kallahan,Latn,ify_Latn
+mey,Hassaniyya,Arab,mey_Arab
+ks,Kashmiri,Arab,kas_Arab
+cac,Chuj,Latn,cac_Latn
+brx,Bodo (India),Deva,brx_Deva
+qup,S. Pastaza Quechua,Latn,qup_Latn
+syl,Sylheti,Beng,syl_Beng
+jax,Jambi Malay,Latn,jax_Latn
+ff,Fulfulde,Latn,ful_Latn
+ber,Tamazight  (Tfng),Tfng,ber_Tfng
+tks,Takestani,Arab,tks_Arab
+trp,Kok Borok,Latn,trp_Latn
+mrw,Maranao,Latn,mrw_Latn
+adh,Adhola,Latn,adh_Latn
+smt,Simte,Latn,smt_Latn
+srr,Serer,Latn,srr_Latn
+ffm,Maasina Fulfulde,Latn,ffm_Latn
+qvc,Cajamarca Quechua,Latn,qvc_Latn
+mtr,Mewari,Deva,mtr_Deva
+ann,Obolo,Latn,ann_Latn
+kaa-Latn,Kara-Kalpak (Latn),Latn,kaa_Latn
+aa,Afar,Latn,aar_Latn
+noe,Nimadi,Deva,noe_Deva
+nut,Nung (Viet Nam),Latn,nut_Latn
+gyn,Guyanese Creole English,Latn,gyn_Latn
+kwi,Awa-Cuaiquer,Latn,kwi_Latn
+xmm,Manado Malay,Latn,xmm_Latn
+msb,Masbatenyo,Latn,msb_Latn
+el-Latn,Greek (Latn),Latn,ell_Latn
+doi,Dogri,Deva,doi_Deva
+mtq,Muong,Latn,mtq_Latn
+dln,Darlong,Latn,dln_Latn
+cyo,Cuyonon,Latn,cyo_Latn
+abs,Ambonese Malay,Latn,abs_Latn
+hi-Latn,Hindi (Latn),Latn,hin_Latn
+shu,Chadian Arabic,Arab,shu_Arab
+yaq,Yaqui,Latn,yaq_Latn
+nyo,Nyoro,Latn,nyo_Latn
+cgg,Chiga,Latn,cgg_Latn
+sxu,Upper Saxon,Latn,sxu_Latn
+mdh,Maguindanaon,Latn,mdh_Latn
+rwr,Marwari (India),Deva,rwr_Deva
+xnr,Kangri,Deva,xnr_Deva
+mui,Musi,Latn,mui_Latn
+skg,Sakalava Malagasy,Latn,skg_Latn
+ymm,Maay,Latn,ymm_Latn
+ctd-Latn,Tedim Chin (Latn),Latn,ctd_Latn
+ayl,Libyan Arabic,Arab,ayl_Arab
+kjb,Q'anjob'al,Latn,kjb_Latn
+rhg-Latn,Rohingya (Latn),Latn,rhg_Latn
+bmm,N. Betsimisaraka Malagasy,Latn,bmm_Latn
+azg,San Pedro Amuzgos Amuzgo,Latn,azg_Latn
+kfy,Kumaoni,Deva,kfy_Deva
+bto,Rinconada Bikol,Latn,bto_Latn
+ja-Latn,Japanese (Latn),Latn,jpn_Latn
+mfb,Bangka,Latn,mfb_Latn
+ru-Latn,Russian (Latn),Latn,rus_Latn
+tuf,Central Tunebo,Latn,tuf_Latn
+ctg,Chittagonian,Beng,ctg_Beng
+pmy,Papuan Malay,Latn,pmy_Latn
+xog,Soga,Latn,xog_Latn
+te-Latn,Telugu (Latn),Latn,tel_Latn
+ber-Latn,Tamazight (Latn),Latn,ber_Latn
+mdy,Male (Ethiopia),Ethi,mdy_Ethi
+az-RU,Azerbaijani (Russia),Cyrl,aze_Cyrl
+ta-Latn,Tamil (Latn),Latn,tam_Latn
+clu,Caluyanun,Latn,clu_Latn
+tly-IR,Talysh (Iran),Arab,tly_Arab
+ng,Ndonga,Latn,ndo_Latn
+bzc,S. Betsimisaraka Malagasy,Latn,bzc_Latn
+nan-Latn-TW,Min Nan Chinese (Latn),Latn,nan_Latn
+ml-Latn,Malayalam (Latn),Latn,mal_Latn
+max,North Moluccan Malay,Latn,max_Latn
+ar-Latn,Arabic (Latn),Latn,ara_Latn
+gom-Latn,Goan Konkani (Latn),Latn,gom_Latn
+bg-Latn,Bulgarian (Latn),Latn,bul_Latn
+nd,North Ndebele,Latn,nde_Latn
+zyj,Youjiang Zhuang,Latn,zyj_Latn
+rkt,Rangpuri,Beng,rkt_Beng
+kn-Latn,Kannada (Latn),Latn,kan_Latn
+zh-Latn,Chinese (Latn),Latn,zho_Latn
+el-CY,Greek (Cypress),Grek,ell_Grek
+dcc,Deccan,Arab,dcc_Arab
+bgc,Haryanvi,Deva,bgc_Deva
+mwr,Marwari,Deva,mwr_Deva
+vkt,Tenggarong Kutai Malay,Latn,vkt_Latn
+cr-Latn,Cree (Latn),Latn,cre_Latn
+apd-SD,Sudanese Arabic,Arab,apd_Arab
+trw,Torwali,Arab,trw_Arab
+bn-Latn,Bengali (Latn),Latn,ben_Latn
+gu-Latn,Gujarati (Latn),Latn,guj_Latn
+gju,Gujari,Arab,gju_Arab
+sat-Latn,Santali (Latn),Latn,sat_Latn
+ndc-ZW,Ndau,Latn,ndc_Latn
+kmz-Latn,Khorasani Turkish (Latn),Latn,kmz_Latn
+mr-Latn,Marathi (Latn),Latn,mar_Latn
+en-Cyrl,English  (Cyrl),Cyrl,eng_Cyrl
+en-Arab,English  (Arab),Arab,eng_Arab
+ms-Arab,Malay (Jawi),Arab,msa_Arab
+ms-Arab-BN,"Malay (Jawi, Brunei)",Arab,msa_Arab
+bhb-Gujr,Bhili,Gujr,bhb_Gujr
+pa-Arab,Lahnda Punjabi (PK),Arab,pan_Arab
+syl-Latn,Sylheti (Latn),Latn,syl_Latn
+ff-Adlm,Fulah,Latn,ful_Latn
+pcm,Nigerian Pidgin,Latn,pcm_Latn
+tpi,Tok Pisin,Latn,tpi_Latn
+gjk,Kachi Koli,Arab,gjk_Arab
+bfy,Bagheli,Deva,bfy_Deva
+sgj,Surgujia,Deva,sgj_Devafchin
+nyn,Nyankole,Latn,nyn_Latn
+an,Aragonese,Latn,arg_Latn
+ast,Asturian,Latn,ast_Latn
+bar,Bavarian,Latn,bar_Latn
+bh,Bhojpuri,Deva,bho_Deva
+bpy,Bishnupriya,Beng,bpy_Beng
+bcl,Coastal-Naga Bikol,Latn,bcl_Latn
+mhr,Eastern Mari,Cyrl,mhr_Cyrl
+arz,Egyptian Arabic,Arab,arz_Arab
+eml,Emiliano-Romagnol,Latn,egl_Latn
+tl,Filipino,Latn,fil_Latn
+io,Ido,Latn,ido_Latn
+ia,Interlingua (International Auxiliary Language Association),Latn,ina_Latn
+ie,Interlingue,Latn,ile_Latn
+lez,Lezgian,Latn,lez_Latn
+li,Limburgan,Latn,lim_Latn
+jbo,Lojban,Latn,jbo_Latn
+lmo,Lombard,Latn,lmo_Latn
+nds,Eastern Low German,Latn,nds_Latn
+dsb,Lower Sorbian,Latn,dsb_Latn
+mzn,Mazanderani,Arab,mzn_Arab
+xmf,Mingrelian,Geor,xmf_Geor
+mwl,Mirandese,Latn,mwl_Latn
+nah,Nahuatl languages,Latn,nah_Latn
+nap,Continental Southern Italian,Latn,nap_Latn
+frr,Northern Frisian,Latn,frr_Latn
+nn,Norwegian Nynorsk,Latn,nno_Latn
+pms,Piemontese,Latn,pms_Latn
+bxr,Russia Buriat,Cyrl,bxr_Cyrl
+rue,Rusyn,Cyrl,rue_Cyrl
+sh,Serbo-Croatian,Latn,hbs_Latn
+scn,Sicilian,Latn,scn_Latn
+azb,South Azerbaijani,Arab,azb_Arab
+als,Tosk Albanian,Latn,als_Latn
+hsb,Upper Sorbian,Latn,hsb_Latn
+vo,Volapük,Latn,vol_Latn
+vls,Western Flemish,Latn,vls_Latn
+pnb,Western Panjabi,Latn,pnb_Latn
+wuu,Wu Chinese,Hans,wuu_Hans
