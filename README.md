@@ -1,3 +1,5 @@
+# DCAD-2000: A Multilingual Dataset across 2000+ Languages with Data Cleaning as Anomaly Detection (Neurips 2025)
+
 ## Dataset Summary
 DCAD-2000 is a large-scale multilingual corpus built using
 newly extracted Common Crawl data (CC-MAIN-2024-46) and existing multilingual datasets. It includes over 2,282 languages, 46.72TB of data, and 8.63 billion documents, spanning 155 highand medium-resource languages and 159 writing scripts. We propose reframing data cleaning as an anomaly detection task. This dynamic filtering approach significantly enhances data quality by identifying and removing noisy or anomalous content.
