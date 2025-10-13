@@ -1,4 +1,4 @@
-# DCAD-2000: A Multilingual Dataset across 2000+ Languages with Data Cleaning as Anomaly Detection (Neurips 2025 Datasets and Benchmarks Track)
+# DCAD-2000: A Multilingual Dataset across 2000+ Languages with Data Cleaning as Anomaly Detection (NeurIPS 2025 Datasets and Benchmarks Track)
 
 ## Dataset Summary
 DCAD-2000 is a large-scale multilingual corpus built using
